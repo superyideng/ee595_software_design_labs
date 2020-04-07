@@ -1,0 +1,188 @@
+EE 501: Solid State(4.0 units)
+EE 503: Probability for Electrical and Computer Engineers(4.0 units)
+EE 507: Micro- and Nano-Fabrication Technology(4.0 units)
+EE 510: Linear Algebra for Engineering(4.0 units)
+EE 511: Simulation Methods for Stochastic Systems(4.0 units)
+EE 512: Stochastic Processes(4.0 units)
+EE 517: Statistics and Data Analysis for Engineers(4.0 units)
+EE 518: Mathematics and Tools for Financial Engineering(4.0 units)
+EE 519: Speech Recognition and Processing for Multimedia(4.0 units)
+EE 521: Power Systems Analysis and Design(4.0 units)
+EE 522: Immersive Audio Signal Processing(4.0 units)
+EE 523: Advanced Biomedical Imaging(4.0 units)
+EE 524: Transients in Power Systems(4.0 units)
+EE 526: Renewable Energy in Power Systems(4.0 units)
+EE 527: Net-Centric Power-System Control(4.0 units)
+EE 533: Network Processor Design and Programming(4.0 units)
+EE 535: Mobile Communications(4.0 units)
+EE 540: Introduction to Quantum Electronics(4.0 units)
+EE 544: Radio Frequency Systems and Hardware(4.0 units)
+EE 549: Nanotechnology for Materials, Electronics, and Circuits(4.0 units)
+EE 552: Asynchronous VLSI Design(4.0 units)
+EE 555: Broadband Network Architectures(4.0 units)
+EE 557: Computer Systems Architecture(4.0 units)
+EE 559: Mathematical Pattern Recognition(4.0 units)
+EE 561: Foundations of Artificial Intelligence(4.0 units)
+EE 562: Random Processes in Engineering(4.0 units)
+EE 563: Estimation Theory(4.0 units)
+EE 564: Digital Communication and Coding Systems(4.0 units)
+EE 565: Information Theory and Compression(4.0 units)
+EE 566: Optical Information Processing(4.0 units)
+EE 569: Introduction to Digital Image Processing(4.0 units)
+EE 576: Integrated Memory Devices and Technologies(4.0 units)
+EE 501: Solid State(4.0 units)
+EE 503: Probability for Electrical and Computer Engineers(4.0 units)
+EE 507: Micro- and Nano-Fabrication Technology(4.0 units)
+EE 510: Linear Algebra for Engineering(4.0 units)
+EE 511: Simulation Methods for Stochastic Systems(4.0 units)
+EE 512: Stochastic Processes(4.0 units)
+EE 517: Statistics and Data Analysis for Engineers(4.0 units)
+EE 518: Mathematics and Tools for Financial Engineering(4.0 units)
+EE 519: Speech Recognition and Processing for Multimedia(4.0 units)
+EE 521: Power Systems Analysis and Design(4.0 units)
+EE 522: Immersive Audio Signal Processing(4.0 units)
+EE 523: Advanced Biomedical Imaging(4.0 units)
+EE 524: Transients in Power Systems(4.0 units)
+EE 526: Renewable Energy in Power Systems(4.0 units)
+EE 527: Net-Centric Power-System Control(4.0 units)
+EE 533: Network Processor Design and Programming(4.0 units)
+EE 535: Mobile Communications(4.0 units)
+EE 540: Introduction to Quantum Electronics(4.0 units)
+EE 544: Radio Frequency Systems and Hardware(4.0 units)
+EE 549: Nanotechnology for Materials, Electronics, and Circuits(4.0 units)
+EE 552: Asynchronous VLSI Design(4.0 units)
+EE 555: Broadband Network Architectures(4.0 units)
+EE 557: Computer Systems Architecture(4.0 units)
+EE 559: Mathematical Pattern Recognition(4.0 units)
+EE 561: Foundations of Artificial Intelligence(4.0 units)
+EE 562: Random Processes in Engineering(4.0 units)
+EE 563: Estimation Theory(4.0 units)
+EE 564: Digital Communication and Coding Systems(4.0 units)
+EE 565: Information Theory and Compression(4.0 units)
+EE 566: Optical Information Processing(4.0 units)
+EE 569: Introduction to Digital Image Processing(4.0 units)
+EE 576: Integrated Memory Devices and Technologies(4.0 units)
+EE 501: Solid State(4.0 units)
+EE 503: Probability for Electrical and Computer Engineers(4.0 units)
+EE 507: Micro- and Nano-Fabrication Technology(4.0 units)
+EE 510: Linear Algebra for Engineering(4.0 units)
+EE 511: Simulation Methods for Stochastic Systems(4.0 units)
+EE 512: Stochastic Processes(4.0 units)
+EE 517: Statistics and Data Analysis for Engineers(4.0 units)
+EE 518: Mathematics and Tools for Financial Engineering(4.0 units)
+EE 519: Speech Recognition and Processing for Multimedia(4.0 units)
+EE 521: Power Systems Analysis and Design(4.0 units)
+EE 522: Immersive Audio Signal Processing(4.0 units)
+EE 523: Advanced Biomedical Imaging(4.0 units)
+EE 524: Transients in Power Systems(4.0 units)
+EE 526: Renewable Energy in Power Systems(4.0 units)
+EE 527: Net-Centric Power-System Control(4.0 units)
+EE 533: Network Processor Design and Programming(4.0 units)
+EE 535: Mobile Communications(4.0 units)
+EE 540: Introduction to Quantum Electronics(4.0 units)
+EE 544: Radio Frequency Systems and Hardware(4.0 units)
+EE 549: Nanotechnology for Materials, Electronics, and Circuits(4.0 units)
+EE 552: Asynchronous VLSI Design(4.0 units)
+EE 555: Broadband Network Architectures(4.0 units)
+EE 557: Computer Systems Architecture(4.0 units)
+EE 559: Mathematical Pattern Recognition(4.0 units)
+EE 561: Foundations of Artificial Intelligence(4.0 units)
+EE 562: Random Processes in Engineering(4.0 units)
+EE 563: Estimation Theory(4.0 units)
+EE 564: Digital Communication and Coding Systems(4.0 units)
+EE 565: Information Theory and Compression(4.0 units)
+EE 566: Optical Information Processing(4.0 units)
+EE 569: Introduction to Digital Image Processing(4.0 units)
+EE 576: Integrated Memory Devices and Technologies(4.0 units)
+EE 501: Solid State(4.0 units)
+EE 503: Probability for Electrical and Computer Engineers(4.0 units)
+EE 507: Micro- and Nano-Fabrication Technology(4.0 units)
+EE 510: Linear Algebra for Engineering(4.0 units)
+EE 511: Simulation Methods for Stochastic Systems(4.0 units)
+EE 512: Stochastic Processes(4.0 units)
+EE 517: Statistics and Data Analysis for Engineers(4.0 units)
+EE 518: Mathematics and Tools for Financial Engineering(4.0 units)
+EE 519: Speech Recognition and Processing for Multimedia(4.0 units)
+EE 521: Power Systems Analysis and Design(4.0 units)
+EE 522: Immersive Audio Signal Processing(4.0 units)
+EE 523: Advanced Biomedical Imaging(4.0 units)
+EE 524: Transients in Power Systems(4.0 units)
+EE 526: Renewable Energy in Power Systems(4.0 units)
+EE 527: Net-Centric Power-System Control(4.0 units)
+EE 533: Network Processor Design and Programming(4.0 units)
+EE 535: Mobile Communications(4.0 units)
+EE 540: Introduction to Quantum Electronics(4.0 units)
+EE 544: Radio Frequency Systems and Hardware(4.0 units)
+EE 549: Nanotechnology for Materials, Electronics, and Circuits(4.0 units)
+EE 552: Asynchronous VLSI Design(4.0 units)
+EE 555: Broadband Network Architectures(4.0 units)
+EE 557: Computer Systems Architecture(4.0 units)
+EE 559: Mathematical Pattern Recognition(4.0 units)
+EE 561: Foundations of Artificial Intelligence(4.0 units)
+EE 562: Random Processes in Engineering(4.0 units)
+EE 563: Estimation Theory(4.0 units)
+EE 564: Digital Communication and Coding Systems(4.0 units)
+EE 565: Information Theory and Compression(4.0 units)
+EE 566: Optical Information Processing(4.0 units)
+EE 569: Introduction to Digital Image Processing(4.0 units)
+EE 576: Integrated Memory Devices and Technologies(4.0 units)
+EE 501
+EE 539
+EE 539
+EE 503
+EE 504
+EE 507
+EE 510
+EE 511
+EE 503
+EE 503
+EE 512
+EE 503
+EE 510
+EE 517
+EE 503
+EE 518
+EE 519
+EE 521
+EE 522
+EE 523
+EE 524
+EE 526
+EE 527
+EE 521
+EE 521
+EE 533
+EE 535
+EE 503
+EE 503
+EE 536
+EE 540
+EE 543
+EE 544
+EE 549
+EE 552
+EE 555
+EE 503
+EE 557
+EE 559
+EE 503
+EE 510
+EE 561
+EE 562
+EE 503
+EE 510
+EE 563
+EE 503
+EE 564
+EE 503
+EE 510
+EE 565
+EE 503
+EE 565
+EE 503
+EE 566
+EE 569
+EE 570
+EE 571
+EE 576
+EE 577

@@ -1,0 +1,3 @@
+// my program in C++ 
+/** playing around in a new programming language **/ 
+//use cout 

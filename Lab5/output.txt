@@ -1,0 +1,4 @@
+KWP Object No.1 is constructed.
+KYP Object No.1 is constructed.
+One KYP object is destructed.
+One KWP object is destructed.
