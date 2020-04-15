@@ -1,16 +1,20 @@
-import java.io.*;
+package lab10;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.*;
 
-public class Main {
-    private static int numNodes, numEdges, numBridge = 0, cnt = 0;
-    private static HashSet<Integer> nodes = new HashSet<>();
-    private static HashMap<Integer, ArrayList<Integer>> undirectedGraph = new HashMap<>();
-    private static HashMap<Integer, ArrayList<Integer>> directedGraph = new HashMap<>();
-    private static HashSet<Integer> visited = new HashSet<>();
-    private static HashMap<Integer, Integer> pre = new HashMap<>();
-    private static HashMap<Integer, Integer> low = new HashMap<>();
+class Tarjan {
+    int numNodes, numEdges, numBridge = 0, cnt = 0;
+    Set<Integer> nodes = new HashSet<>();
+    Map<Integer, ArrayList<Integer>> undirectedGraph = new HashMap<>();
+    Map<Integer, ArrayList<Integer>> directedGraph = new HashMap<>();
+    Map<Integer, Integer> pre = new HashMap<>();
+    Map<Integer, Integer> low = new HashMap<>();
 
-    private static void readFile(String filepath) throws IOException{
+    public void readFile(String filepath) throws IOException {
         FileInputStream fileStream = new FileInputStream(filepath);
         BufferedReader fin = new BufferedReader(new InputStreamReader(fileStream));
         numNodes = Integer.valueOf(fin.readLine());
@@ -25,6 +29,8 @@ public class Main {
             nodes.add(node2);
 
             // add neighbors to the adj list as the input file is undirected
+
+
             ArrayList<Integer> neighbor1 = undirectedGraph.getOrDefault(node1, new ArrayList<>());
             neighbor1.add(node2);
             undirectedGraph.put(node1, neighbor1);
@@ -40,45 +46,10 @@ public class Main {
         }
     }
 
-    private static boolean treeChecker() {
-        int curr = nodes.iterator().next();
-        if (!helper(curr, -1, new ArrayList<>())) {
-            return false;
+    public int maxDegreeOfUndirected() {
+        if (numNodes == 0 || numEdges == 0) {
+            System.out.println("This graph has no max degree, as it has no nodes or edges.");
         }
-        if (visited.size() != numNodes) {
-            System.out.println("This graph is not a tree, as it is not connected.");
-            return false;
-        }
-
-        System.out.println("This graph is a tree, it is connected and has no loop inside.");
-        return true;
-    }
-
-    private static boolean helper(int curr, int parent, ArrayList<Integer> path) {
-        if (visited.contains(curr)) {
-            System.out.print("This graph is not a tree. A loop in this graph is: ");
-            for (int node : path) {
-                System.out.print(node + " ");
-            }
-            System.out.println(curr);
-            return false;
-        }
-
-        visited.add(curr);
-
-        for (int i : undirectedGraph.get(curr)) {
-            path.add(curr);
-            if (i != parent && !helper(i, curr, path)) {
-                return false;
-            }
-            path.remove(path.size() - 1);
-
-        }
-
-        return true;
-    }
-
-    private static int maxDegreeOfUndirected() {
         int maxDegree = -1;
         int maxNode = -1;
         for (int node : undirectedGraph.keySet()) {
@@ -94,7 +65,7 @@ public class Main {
         return maxNode;
     }
 
-    private static void tarjan(int u, int father) {
+    public void tarjan(int u, int father) {
         for (int v : nodes) {
             low.put(v, -1);
             pre.put(v, -1);
@@ -105,7 +76,7 @@ public class Main {
                 dfs(v, v);
     }
 
-    private static void dfs(int u, int v) {
+    private void dfs(int u, int v) {
         pre.put(v, cnt++);
         low.put(v, pre.get(v));
         for (int w : undirectedGraph.get(v)) {
@@ -116,7 +87,7 @@ public class Main {
                     if (numBridge == 0) {
                         System.out.println("This graph has bridge(s), which are shown as follows.");
                     }
-                    StdOut.println("--- Edge (" + v + ", " + w + ") is one bridge.");
+                    System.out.println("--- Edge (" + v + ", " + w + ") is one bridge.");
                     numBridge++;
                 }
             }
@@ -127,7 +98,7 @@ public class Main {
         }
     }
 
-    private static List<Integer> topoSort() {
+    public List<Integer> topoSort() {
         Deque<Integer> stack = new ArrayDeque<>();
         Set<Integer> topoVis = new HashSet<>();
         for (int v : directedGraph.keySet()) {
@@ -136,7 +107,7 @@ public class Main {
             }
             topoSortUtil(v, stack, topoVis);
         }
-        System.out.print("One topological sort of the graph is: ");
+        System.out.print("One topological sort of this graph is: ");
         List<Integer> result = new ArrayList<>();
         while (!stack.isEmpty()) {
             int curr = stack.pop();
@@ -147,7 +118,7 @@ public class Main {
         return result;
     }
 
-    private static void topoSortUtil(int vertex, Deque<Integer> stack, Set<Integer> topoVis) {
+    private void topoSortUtil(int vertex, Deque<Integer> stack, Set<Integer> topoVis) {
         topoVis.add(vertex);
         for (int childVertex : directedGraph.getOrDefault(vertex, new ArrayList<>())) {
             if (topoVis.contains(childVertex)) {
@@ -157,23 +128,27 @@ public class Main {
         }
         stack.offerFirst(vertex);
     }
+}
 
-//    private static void maxClique() {
-//
-//    }
-
-
+public class lab10_part2 {
     public static void main(String[] args) throws IOException{
-        String path = "input_p1.txt";
-        readFile(path);
-        boolean isTree = treeChecker();
-        maxDegreeOfUndirected();
-        tarjan(nodes.iterator().next(), -1);
-        if (numBridge == 0) {
-            System.out.println("This graph has no bridges.");
-        }
-        if (isTree) {
-            topoSort();
+        for (int _n = 0; _n < 20; _n++) {
+            System.out.println("For Graph" + _n + ":");
+            TreeChecker tc = new TreeChecker();
+            tc.readFile("graph" + _n + ".txt");
+            boolean isTree = tc.treeChecker();
+
+            Tarjan tarj = new Tarjan();
+            tarj.readFile("graph" + _n + ".txt");
+            tarj.maxDegreeOfUndirected();
+            tarj.tarjan(0, -1);
+            if (tarj.numBridge == 0) {
+                System.out.println("This graph has no bridge.");
+            }
+            if (isTree) {
+                tarj.topoSort();
+            }
+            System.out.println();
         }
     }
 }
