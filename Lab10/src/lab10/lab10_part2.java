@@ -135,11 +135,11 @@ public class lab10_part2 {
         for (int _n = 0; _n < 20; _n++) {
             System.out.println("For Graph" + _n + ":");
             TreeChecker tc = new TreeChecker();
-            tc.readFile("graph" + _n + ".txt");
+            tc.readFile("graphs_generated/graph" + _n + ".txt");
             boolean isTree = tc.treeChecker();
 
             Tarjan tarj = new Tarjan();
-            tarj.readFile("graph" + _n + ".txt");
+            tarj.readFile("graphs_generated/graph" + _n + ".txt");
             tarj.maxDegreeOfUndirected();
             tarj.tarjan(0, -1);
             if (tarj.numBridge == 0) {

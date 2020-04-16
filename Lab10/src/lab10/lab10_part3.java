@@ -89,7 +89,7 @@ public class lab10_part3 {
         for (int _n = 0; _n < 20; _n++) {
             System.out.println("For Graph" + _n + ":");
             MaxClique mc = new MaxClique();
-            mc.readFile("graph" + _n + ".txt");
+            mc.readFile("graphs_generated/graph" + _n + ".txt");
             mc.maxCliques(-1, 1);
             System.out.print("The max clique has " + mc.numNodeInClique + " node(s) in it: ");
             for (int i = 1; i < mc.numNodeInClique + 1; i++) {

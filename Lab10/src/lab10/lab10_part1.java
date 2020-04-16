@@ -1,7 +1,5 @@
 package lab10;
-import edu.princeton.cs.algs4.MSD;
 
-import javax.print.attribute.IntegerSyntax;
 import java.io.*;
 import java.util.*;
 
@@ -98,8 +96,16 @@ class TreeChecker {
 class GraphGenerator {
     int fileNo = 0;
 
+    GraphGenerator() {
+        // create a folder to store the graphs generated
+        File folder = new File("graphs_generated");
+        if (!folder.exists()) {
+            folder.mkdir();
+        }
+    }
+
     void generate() throws IOException {
-        String curGraphName = "graph" + fileNo + ".txt";
+        String curGraphName = "graphs_generated/graph" + fileNo + ".txt";
         BufferedWriter out = new BufferedWriter(new FileWriter(curGraphName));
 
         if (fileNo == 0) { // generate graph with 0 edge and 0 node
@@ -161,7 +167,7 @@ public class lab10_part1 {
         for (int _n = 0; _n < 20; _n++) {
             gg.generate();
             TreeChecker tc = new TreeChecker();
-            tc.readFile("graph" + _n + ".txt");
+            tc.readFile("graphs_generated/graph" + _n + ".txt");
             tc.treeChecker();
         }
     }
